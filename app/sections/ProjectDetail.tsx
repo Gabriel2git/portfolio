@@ -31,7 +31,7 @@ const projectDetails: Record<string, {
     solution: "四段式输出结构：情绪识别 → 共情确认 → 归因分析 → 微行动建议。受控生成链路确保输出风格一致、风险可控，风控前置避免生成有害内容。Web MVP 采用简洁的单页交互，降低使用门槛。",
     validation: "核心用户灰度测试显示，用户平均使用时长 3-5 分钟，80% 用户表示「得到了想要的建议」。关键路径验证表明从输入到获得建议的转化率超过 75%。",
     role: "产品定位、结构设计、Prompt 设计、埋点方案、Vercel 上线部署。",
-    demoUrl: "https://ziwei-app-gz.vercel.app/",
+    demoUrl: "https://cyber-copium.vercel.app/",
     githubUrl: "https://github.com/Gabriel2git/CyberCopium",
   },
   "prompt-forge": {
@@ -128,13 +128,15 @@ export default function ProjectDetail({ projectId, onClose }: ProjectDetailProps
 
             {/* Actions */}
             <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-100">
-              <Button
-                className="bg-zinc-900 hover:bg-zinc-800"
-                onClick={() => window.open(project.demoUrl, "_blank")}
-              >
-                <ExternalLink className="mr-2 h-4 w-4" />
-                在线体验
-              </Button>
+              {project.demoUrl !== "#" && (
+                <Button
+                  className="bg-zinc-900 hover:bg-zinc-800"
+                  onClick={() => window.open(project.demoUrl, "_blank")}
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  在线体验
+                </Button>
+              )}
               <Button
                 variant="outline"
                 onClick={() => window.open(project.githubUrl, "_blank")}

@@ -51,15 +51,17 @@ export default function ProjectCard({
 
         {/* Actions */}
         <div className="flex flex-wrap gap-2">
-          <Button
-            size="sm"
-            variant="outline"
-            className="flex-1"
-            onClick={() => window.open(demoUrl, "_blank")}
-          >
-            <ExternalLink className="mr-1 h-4 w-4" />
-            在线体验
-          </Button>
+          {demoUrl !== "#" && (
+            <Button
+              size="sm"
+              variant="outline"
+              className="flex-1"
+              onClick={() => window.open(demoUrl, "_blank")}
+            >
+              <ExternalLink className="mr-1 h-4 w-4" />
+              在线体验
+            </Button>
+          )}
           <Button
             size="sm"
             variant="outline"

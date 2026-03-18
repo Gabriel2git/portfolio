@@ -13,7 +13,7 @@ const projects = [
     description: "短链路情绪转译工具",
     tags: ["情绪AI", "微行动", "生成控制"],
     image: "/images/cyber-copium.jpg",
-    demoUrl: "https://ziwei-app-gz.vercel.app/",
+    demoUrl: "https://cyber-copium.vercel.app/",
     githubUrl: "https://github.com/Gabriel2git/CyberCopium",
   },
   {
