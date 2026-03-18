@@ -43,7 +43,7 @@ export default function Contact() {
 
         <div className="text-sm text-zinc-400">
           <p>Made with passion for AI products</p>
-          <p className="mt-1">© 2024</p>
+          <p className="mt-1">© 2026</p>
         </div>
       </div>
     </section>
