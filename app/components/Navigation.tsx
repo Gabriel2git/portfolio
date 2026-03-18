@@ -50,7 +50,7 @@ export default function Navigation() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            郑皓予
+            GZ's portfolio
           </a>
 
           {/* Desktop Navigation */}

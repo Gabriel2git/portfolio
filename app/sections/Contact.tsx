@@ -42,8 +42,8 @@ export default function Contact() {
         </div>
 
         <div className="text-sm text-zinc-400">
-          <p>郑皓予 © 2024</p>
-          <p className="mt-1">C端AI应用产品经理</p>
+          <p>Made with passion for AI products</p>
+          <p className="mt-1">© 2024</p>
         </div>
       </div>
     </section>
